@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="3dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Choose Operator"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey" />
+
+            <RadioGroup
+                android:id="@+id/opRadioMnp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbGPMnp"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gp_selector"
+                    android:button="@null" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="2dp" />
+
+                <RadioButton
+                    android:id="@+id/rbBLMnp"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bl_selector"
+                    android:button="@null" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="2dp" />
+
+                <RadioButton
+                    android:id="@+id/rbRobiMnp"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/robi_selector"
+                    android:button="@null" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="2dp" />
+
+                <RadioButton
+                    android:id="@+id/rbAirtelMnp"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/airtel_selector"
+                    android:button="@null" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="2dp" />
+
+                <RadioButton
+                    android:id="@+id/rbTTMnp"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tt_selector"
+                    android:button="@null" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#304ffe</color>
+    <color name="colorAccent">#304ffe</color>
+    <color name="postPaid">#c5cae9</color>
+    <color name="grey">#eeeeee</color>
+    <color name="white">#fafafa</color>
+</resources>
+

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuickRecharge">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbarQuick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="Quick Recharge"
+            android:textSize="24sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+
+        <ImageButton
+            android:id="@+id/ibContactsQR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ic_phonebook" />
+
+        <EditText
+            android:id="@+id/etNumberQR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="7"
+            android:background="@null"
+            android:hint="Phone Number"
+            android:inputType="numberSigned"
+            android:maxLength="14"
+            android:selectAllOnFocus="true" />
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Name:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/raleway"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNoteQR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Name/ Package name"
+                android:maxLength="30" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/raleway"
+                android:text="Recharge Amount:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAmountQR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:digits="0123456789"
+                android:hint="Amount"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
+                    android:text="Select Type:  "
+                    android:textSize="20sp"
+                    android:layout_gravity="center"/>
+
+                <RadioGroup
+                    android:id="@+id/rgOpTypeQR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:checkedButton="@id/prepaidQR">
+
+                    <RadioButton
+                        android:id="@+id/prepaidQR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Prepaid"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/postpaidQR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Postpaid" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select operator:"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"/>
+
+            <RadioGroup
+                android:id="@+id/opRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rbGP"
+                    android:layout_width="0dp"
+                    android:layout_height="53dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gp_selector"
+                    android:button="@null" />
+
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbBL"
+                    android:layout_width="0dp"
+                    android:layout_height="53dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bl_selector"
+                    android:button="@null" />
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbRobi"
+                    android:layout_width="0dp"
+                    android:layout_height="53dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/robi_selector"
+                    android:button="@null" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbAirtel"
+                    android:layout_width="0dp"
+                    android:layout_height="53dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/airtel_selector"
+                    android:button="@null" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"/>
+
+                <RadioButton
+                    android:id="@+id/rbTT"
+                    android:layout_width="0dp"
+                    android:layout_height="53dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tt_selector"
+                    android:button="@null" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/subArrowDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▼"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:textSize="18dp"/>
+
+            <RadioGroup
+                android:id="@+id/gpRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:layout_gravity="left"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rbSK"
+                    android:layout_width="75dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="top|center"
+                    android:background="@drawable/skitto_selector"
+                    android:button="@null" />
+
+            </RadioGroup>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddQR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Add"
+                app:cornerRadius="5dp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

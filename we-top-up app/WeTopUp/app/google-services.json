@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "263807486495",
+    "firebase_url": "https://we-top-up-1563278175651.firebaseio.com",
+    "project_id": "we-top-up-1563278175651",
+    "storage_bucket": "we-top-up-1563278175651.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263807486495:android:a2283b512898f5e9",
+        "android_client_info": {
+          "package_name": "com.spider.wetop_up"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263807486495-t3kp1m30jn16r3s1u2e4r6c639tdmtm5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spider.wetop_up",
+            "certificate_hash": "09c6f850b4dfad4c084205b09be55eeb20d38c21"
+          }
+        },
+        {
+          "client_id": "263807486495-qbmvh7hhsh740c94ph6dcjlm1q6kn27j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH11eC98aGUanBXS_2zwo246i-2SmVkjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263807486495-qbmvh7hhsh740c94ph6dcjlm1q6kn27j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

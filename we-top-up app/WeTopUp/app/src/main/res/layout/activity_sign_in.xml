@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center_horizontal"
+            android:text="Welcome"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/pinOrPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Pin"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etCheckUserPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            app:errorEnabled="true">
+
+            <com.chaos.view.PinView
+                android:id="@+id/etPin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:textColor="@color/colorAccent"
+                android:cursorVisible="false"
+                style="@style/PinWidget.PinView"
+                app:itemRadius="3dp"
+                app:itemCount="4"
+                app:lineColor="@color/pin" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPasswordLayout"
+            app:passwordToggleEnabled="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center_horizontal">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <de.mustafagercek.library.LoadingButton
+            android:id="@+id/btnSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:buttonText="@string/sign_in"
+            android:textColor="#FFFFFF"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnForgotPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="Forgot Pin"
+            android:textAllCaps="false"/>
+
+
+    </LinearLayout>
+</ScrollView>

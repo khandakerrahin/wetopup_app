@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_village"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/ic_accounting"
+        android:title="History" />
+
+    <item
+        android:id="@+id/nav_balance"
+        android:icon="@drawable/ic_bank_account"
+        android:title="Safety Stock"/>
+    <item
+        android:id="@+id/nav_offers"
+        android:icon="@drawable/ic_bank_account"
+        android:title="Offers"/>
+
+</menu>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/logo_03" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvSignIn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:fontFamily="@font/raleway"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:textSize="30sp"-->
+<!--            android:textStyle="bold" />-->
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="#F5F5F5"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="12dp">
+
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                app:errorEnabled="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text=""
+                    android:textSize="20sp" />
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/signInGoogle"
+                    android:layout_width="270sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="12.5"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text=""
+                    android:textSize="20sp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <!--                <View-->
+                    <!--                    android:layout_width="150dp"-->
+                    <!--                    android:layout_height="4dp"-->
+                    <!--                    android:layout_marginLeft="10dp"-->
+                    <!--                    android:layout_marginRight="10dp"-->
+                    <!--                    android:layout_gravity="center"-->
+                    <!--                    android:background="#a6a6a6" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="Or"
+                        android:layout_gravity="center|top"
+                        android:textSize="18sp" />
+                    <!--                <View-->
+                    <!--                    android:layout_width="150dp"-->
+                    <!--                    android:layout_height="4dp"-->
+                    <!--                    android:layout_marginLeft="10dp"-->
+                    <!--                    android:layout_marginRight="10dp"-->
+                    <!--                    android:layout_gravity="center"-->
+                    <!--                    android:background="#a6a6a6" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🇧🇩 +880"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="2dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/etCheckUserInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:ems="10"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etCheckUser"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Phone"
+                            android:inputType="numberSigned"
+                            android:singleLine="true" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.mustafagercek.library.LoadingButton
+                android:id="@+id/btnNext"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                app:buttonText="@string/next"
+                app:labelVisibilityMode="selected" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/terms_message"
+                    android:layout_gravity="center|top"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms &amp; Conditions"
+                    android:textColor="#0000EE"
+                    android:layout_gravity="center|top"
+                    android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&amp;"
+                    android:layout_gravity="center|top"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:textColor="#0000EE"
+                    android:layout_gravity="center|top"
+                    android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

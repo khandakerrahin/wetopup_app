@@ -1,0 +1,40 @@
+<resources>
+
+    <string name="app_name">We Top Up</string>
+    <string name="webLink">www.we-top-up.com</string>
+    <string name="FACEBOOK_APP_ID">935311486814133</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">62c53f0b8ad3ad314a6ecb45797f2f41</string>
+
+    <string name="create_user">Create User</string>
+    <string name="next">Continue</string>
+    <string name="email_or_phone">Email or phone</string>
+    <string name="enter_password">Enter password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="terms_message">By continuing, you agree to our</string>
+
+
+    <string name="terms_page">terms.php</string>
+    <string name="privacy_page">privacy-policy.php</string>
+
+    <string name="terms_link">https://www.we-top-up.com/terms.php</string>
+    <string name="privacy_link">https://www.we-top-up.com/privacy-policy.php</string>
+
+    <string name="link">https://we-top-up.com/jboss/androidApi/android.php</string>
+
+    <string name="server_client_id">263807486495-kjkqg79euuorrdavj6i218o0s5cl52bm.apps.googleusercontent.com</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="fcm_token">FCM Token %s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_us"><![CDATA[We Top Up is Bangladesh\'s emerging mobile recharge platform. It is a product of Spider Digital Commerce Bangladesh Limited, a technology company working in FinTech & Next Level IoT (Internet of Things) solution that provides digital solution to partners in order to help them in developing their process digitalization and related solutions for their digital growth]]></string>
+    <string name="title_activity_offers">OffersActivity</string>
+
+    <string name="tab_text_1">Internet</string>
+    <string name="tab_text_2">Voice</string>
+    <string name="tab_text_3">Bundle</string>
+    <string name="title_activity_op_offers">OpOffers</string>
+
+</resources>

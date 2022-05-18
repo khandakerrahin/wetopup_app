@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OTPActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/raleway"
+        android:gravity="center"
+        android:text="Enter the code that was sent to"
+        android:layout_marginEnd="10dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvPhoneSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:gravity="center"
+        android:textSize="24sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otpPinLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <com.chaos.view.PinView
+            android:id="@+id/otpPin"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:inputType="numberSigned"
+            android:textColor="@color/colorAccent"
+            app:itemCount="4"
+            app:itemRadius="3dp"
+            app:lineColor="@color/pin"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
